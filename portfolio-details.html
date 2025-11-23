@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details - Fahri Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/image.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Fahri
+  * Template URL: https://bootstrapmade.com/Fahri-free-bootstrap-cv-resume-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/image.png" alt="Fahri logo" class="logo-img">
+        <h1 class="sitename">FAHRI &#8482;</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark theme" title="Toggle dark theme"><i class="bi bi-moon-stars-fill"></i></button>
+  <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <a href="portfolio.html" id="back-to-portfolio" class="btn btn-sm btn-outline-primary mb-3" onclick="if(document.referrer && document.referrer.indexOf('portfolio.html')!==-1){ history.back(); return false; }">
+          <i class="bi bi-arrow-left"></i>
+          &nbsp;Back to portfolio
+        </a>
+        <h2>Portfolio Details</h2>
+        <p>Project overview and media — browse images and details for this project.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider">
+              <div id="detail-image-container">
+                <button id="prev-image" class="image-nav prev" aria-label="Previous image" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); z-index: 60; width: 48px; height: 48px; border-radius: 50%; background: rgba(0,0,0,0.5); border: none; color: white; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 20px;"><i class="bi bi-chevron-left"></i></button>
+                <img id="detail-image" src="" alt="" class="img-fluid">
+                <button id="next-image" class="image-nav next" aria-label="Next image" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); z-index: 60; width: 48px; height: 48px; border-radius: 50%; background: rgba(0,0,0,0.5); border: none; color: white; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 20px;"><i class="bi bi-chevron-right"></i></button>
+                <div id="image-counter" class="mt-2 text-center" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web design</li>
+                <li><strong>Client</strong>: ASU Company</li>
+                <li><strong>Project date</strong>: 01 March, 2020</li>
+                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Project overview</h2>
+              <p>
+                Browse the gallery to see different views of this project. The description and project details on the right explain the goals, tools and context. Use the arrows or keyboard to navigate images.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Fahri</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+  <script>
+    // Portfolio details with previous/next image navigation.
+    window.addEventListener('load', function() {
+      function qs(name){ return new URLSearchParams(location.search).get(name); }
+      let id = qs('id');
+      const imgParam = parseInt(qs('img') || '0', 10) || 0;
+
+      const items = {
+        'masonry-portfolio-1': {
+          title: 'Unity Horror Game',
+          category: 'Game',
+          client: 'Myself',
+          date: '18 Juni, 2025',
+          url: '#',
+          images: [
+            'assets/img/Screenshot 2025-11-20 095954.png',
+            'assets/img/Screenshot 2025-11-20 102533.png',
+            'assets/img/Screenshot 2025-11-20 102622.png'
+          ],
+          description: 'A horror game made with Unity, I was made this back when I was on early 11th grade but still unfinished because of lack of time to do it and also life, The game was supposed to be a PS1 First person Pyschological Horror Game with cryptic storytelling and emotional impact.'
+        },
+        'masonry-portfolio-2': {
+          title: 'Forsaken (Emotional Horror Stories)',
+          category: 'Story',
+          client: 'Self-Initiated',
+          date: '15 Nov, 2024',
+          url: 'forsaken-story.html',
+          images: [
+            'assets/img/New Project.png'
+          ],
+          description: 'A stories between the Main Character, Riley, and Jigsaw. An emotional horror narrative exploring the connection between two characters through cryptic storytelling and psychological depth.',
+          hasButton: true,
+          buttonText: 'Read Stories',
+          buttonUrl: 'forsaken-story.html'
+        },
+        'masonry-portfolio-3': {
+          title: 'My school 3D works',
+          category: '3D Design',
+          client: 'Teacher',
+          date: '05 Mar, 2024',
+          url: 'portfolio-details.html?id=masonry-portfolio-3',
+          images: [
+            'assets/img/portfolio/3ddesign.png'
+          ],
+          description: 'A 5 object of 3D from my Teacher'
+        },
+        'masonry-portfolio-4': {
+          title: 'Lo-Fi Train',
+          category: '3D/Level Design',
+          client: 'Myself',
+          date: 'Early 2023',
+          url: 'https://twhl.info/vault/view/6832',
+          images: [
+            'assets/img/dude.jpg',
+            'assets/img/dude2.jpg',
+            'assets/img/dude3.jpg',
+            'assets/img/svencoopmap.mp4'
+          ],
+          description: 'A sven co-op map I made for fun, It was meant to test my level design skills using J.A.C.K Hammer Editor, the map is available to download in twhl.info (TWHL) and play on the Sven Co-op :3'
+        },
+        'masonry-portfolio-5': {
+          title: 'Product 2',
+          category: 'Product',
+          client: 'Client E',
+          date: '06 May, 2024',
+          url: '#',
+          images: [
+            'assets/img/masonry-portfolio/masonry-portfolio-5.jpg',
+            'assets/img/masonry-portfolio/masonry-portfolio-8.jpg'
+          ],
+          description: 'High-fidelity product photography and detail shots.'
+        },
+        'masonry-portfolio-6': {
+          title: 'Branding 2',
+          category: 'Branding',
+          client: 'Client F',
+          date: '22 Jun, 2024',
+          url: '#',
+          images: [
+            'assets/img/masonry-portfolio/masonry-portfolio-6.jpg',
+            'assets/img/masonry-portfolio/masonry-portfolio-9.jpg'
+          ],
+          description: 'Visual identity exploration and brand collateral presentation.'
+        },
+        'masonry-portfolio-7': {
+          title: 'App 3',
+          category: 'App',
+          client: 'Client G',
+          date: '14 Jul, 2024',
+          url: '#',
+          images: [
+            'assets/img/masonry-portfolio/masonry-portfolio-7.jpg'
+          ],
+          description: 'Prototype screens focusing on accessibility and usability.'
+        },
+        'masonry-portfolio-8': {
+          title: 'Product 3',
+          category: 'Product',
+          client: 'Client H',
+          date: '30 Aug, 2024',
+          url: '#',
+          images: [
+            'assets/img/masonry-portfolio/masonry-portfolio-8.jpg'
+          ],
+          description: 'Detailed product shots showing material and texture.'
+        },
+        'masonry-portfolio-9': {
+          title: 'Branding 3',
+          category: 'Branding',
+          client: 'Client I',
+          date: '09 Sep, 2024',
+          url: '#',
+          images: [
+            'assets/img/masonry-portfolio/masonry-portfolio-9.jpg'
+          ],
+          description: 'Comprehensive branding project including packaging and signage.'
+        },
+        'masonry-portfolio-10': {
+          title: '3D Character - Chloe',
+          category: 'Original Character',
+          client: 'Self-Initiated',
+          date: '15 May, 2024',
+          url: '#',
+          images: [
+            'assets/img/Chloe 1.png',
+            'assets/img/Chloe 2.png',
+            'assets/img/Chloe 3.png'
+          ],
+          description: 'A 3D character model named Chloe, created using Blender and rendered with Cycles. Chloe is designed as a stylized character with a focus on expressive features and detailed texturing.'
+        }
+      };
+
+      const gallery = Object.keys(items);
+      let currentProjectIndex = Math.max(0, gallery.indexOf(id));
+      if (currentProjectIndex === -1) currentProjectIndex = 0; // fallback to first
+
+      const detailContainer = document.getElementById('detail-image-container');
+      const titleEl = document.querySelector('#portfolio-details .section-title h2');
+      const subtitleEl = document.querySelector('#portfolio-details .section-title p');
+      const infoLis = document.querySelectorAll('.portfolio-info ul li');
+      const infoH3 = document.querySelector('.portfolio-info h3');
+      const descH2 = document.querySelector('.portfolio-description h2');
+      const descP = document.querySelector('.portfolio-description p');
+
+      const prevBtn = document.getElementById('prev-image');
+      const nextBtn = document.getElementById('next-image');
+      const counterEl = document.getElementById('image-counter');
+
+      // per-project image index
+      let currentImageIndex = 0;
+
+      function renderProject(projectIndex, imageIndex){
+        const currentId = gallery[projectIndex];
+        const use = items[currentId] || fallback;
+        const images = Array.isArray(use.images) && use.images.length ? use.images : [use.image || fallback.image];
+        imageIndex = Math.max(0, Math.min(imageIndex, images.length - 1));
+
+        // Render media: image or video depending on file extension
+        try {
+          const mediaUrl = images[imageIndex];
+          const existing = detailContainer.querySelector('img,video');
+          let newEl;
+          if (/\.(mp4|webm|ogg)(\?|#|$)/i.test(mediaUrl)) {
+            newEl = document.createElement('video');
+            newEl.id = 'detail-video';
+            newEl.className = 'img-fluid';
+            newEl.controls = true;
+            newEl.preload = 'metadata';
+            const src = document.createElement('source');
+            src.src = mediaUrl;
+            newEl.appendChild(src);
+          } else {
+            newEl = document.createElement('img');
+            newEl.id = 'detail-image';
+            newEl.className = 'img-fluid';
+            newEl.alt = use.title || '';
+            newEl.src = mediaUrl;
+          }
+          if (existing) {
+            detailContainer.replaceChild(newEl, existing);
+          } else {
+            // Insert between prev and next buttons if possible
+            const nextBtnLocal = detailContainer.querySelector('#next-image');
+            if (nextBtnLocal) detailContainer.insertBefore(newEl, nextBtnLocal);
+            else detailContainer.appendChild(newEl);
+          }
+
+          // when media is ready, reposition nav buttons
+          if (newEl.tagName === 'IMG') {
+            newEl.addEventListener('load', function(){ schedulePositionNav(); }, {once:true});
+          } else if (newEl.tagName === 'VIDEO') {
+            newEl.addEventListener('loadedmetadata', function(){ schedulePositionNav(); }, {once:true});
+          }
+        } catch (e) {
+          // fallback: do nothing
+        }
+        if (titleEl) titleEl.textContent = use.title;
+        if (subtitleEl) subtitleEl.textContent = use.category || 'Portfolio Details';
+        if (infoLis && infoLis.length >= 4) {
+          const isStory = (use.category || '').toLowerCase() === 'story' || (use.isStory === true);
+          infoLis[0].innerHTML = '<strong>Category</strong>: ' + (use.category || '—');
+          infoLis[1].innerHTML = '<strong>Client</strong>: ' + (use.client || '—');
+          infoLis[2].innerHTML = '<strong>' + (isStory ? 'Story date' : 'Project date') + '</strong>: ' + (use.date || '—');
+          let urlContent = '<strong>' + (isStory ? 'Story URL' : 'Project URL') + '</strong>: <a href="' + (use.url || '#') + '">' + (use.url || '#') + '</a>';
+          if (use.hasButton && use.buttonText && use.buttonUrl) {
+            urlContent += '<br><a href="' + use.buttonUrl + '" class="btn btn-sm btn-theme mt-2" style="display: inline-block;">' + use.buttonText + '</a>';
+          }
+          infoLis[3].innerHTML = urlContent;
+
+          // update the info heading for stories vs projects
+          if (infoH3) infoH3.textContent = isStory ? 'Story information' : 'Project information';
+        }
+        if (descH2) descH2.textContent = use.title;
+        if (descP) descP.textContent = use.description;
+
+        // media counter
+        if (counterEl) counterEl.textContent = (imageIndex + 1) + ' / ' + images.length;
+
+        // update URL to include img index for bookmarking
+        try {
+          const newUrl = 'portfolio-details.html?id=' + encodeURIComponent(currentId) + '&img=' + imageIndex;
+          history.replaceState(null, '', newUrl);
+        } catch (e) {}
+      }
+
+      // initialize image index from ?img= if present
+      currentImageIndex = Math.max(0, imgParam);
+
+      // initial render of current project and image
+      renderProject(currentProjectIndex, currentImageIndex);
+
+      // Position prev/next buttons: use fixed positioning on small viewports (mobile/tablet)
+      // and absolute positioning inside the image container on desktop.
+      function positionNavFixed(){
+        try{
+          if (!detailContainer || !prevBtn || !nextBtn) return;
+          const mediaEl = detailContainer.querySelector('img,video');
+          if (!mediaEl) return;
+          const rect = mediaEl.getBoundingClientRect();
+          // if image not visible or has no size, hide buttons
+          if (rect.width <= 0 || rect.height <= 0) {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+            return;
+          }
+          prevBtn.style.display = 'flex';
+          nextBtn.style.display = 'flex';
+
+          const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+          const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+          // On large desktops, keep CSS absolute positioning inside the image container
+          // so layout remains consistent with the original design.
+          if (viewportWidth >= 1200) {
+            prevBtn.style.position = 'absolute';
+            prevBtn.style.left = '12px';
+            prevBtn.style.right = '';
+            prevBtn.style.top = '50%';
+            prevBtn.style.transform = 'translateY(-50%)';
+            prevBtn.style.zIndex = '60';
+
+            nextBtn.style.position = 'absolute';
+            nextBtn.style.right = '12px';
+            nextBtn.style.left = '';
+            nextBtn.style.top = '50%';
+            nextBtn.style.transform = 'translateY(-50%)';
+            nextBtn.style.zIndex = '60';
+            return;
+          }
+
+          // For narrower viewports (tablets/phones), compute fixed coordinates from image rect
+          const prevH = prevBtn.offsetHeight || 48;
+          const prevW = prevBtn.offsetWidth || 48;
+          const nextW = nextBtn.offsetWidth || 48;
+
+          // compute vertical center of image in viewport and clamp to viewport bounds
+          const centerY = rect.top + rect.height / 2;
+          const top = Math.min(Math.max(Math.round(centerY - prevH/2), 8), Math.round(viewportHeight - prevH - 8));
+
+          // compute left positions but clamp so buttons stay inside viewport
+          const margin = Math.max(8, Math.round(Math.min(24, rect.width * 0.03)) );
+          let leftForPrev = Math.round(rect.left + margin);
+          let leftForNext = Math.round(rect.right - margin - nextW);
+
+          leftForPrev = Math.min(Math.max(leftForPrev, 8), Math.round(viewportWidth - prevW - 8));
+          leftForNext = Math.min(Math.max(leftForNext, 8), Math.round(viewportWidth - nextW - 8));
+
+          prevBtn.style.position = 'fixed';
+          prevBtn.style.left = leftForPrev + 'px';
+          prevBtn.style.top = top + 'px';
+          prevBtn.style.zIndex = '120000';
+          prevBtn.style.transform = 'none';
+
+          nextBtn.style.position = 'fixed';
+          nextBtn.style.left = leftForNext + 'px';
+          nextBtn.style.top = top + 'px';
+          nextBtn.style.zIndex = '120000';
+          nextBtn.style.transform = 'none';
+        }catch(e){ /* ignore */ }
+      }
+
+      // debounce helper
+      let __nav_pos_timer = null;
+      function schedulePositionNav(){
+        if (__nav_pos_timer) clearTimeout(__nav_pos_timer);
+        __nav_pos_timer = setTimeout(positionNavFixed, 40);
+      }
+
+      // update positioning on resize and scroll; media load handlers are attached
+      // when media elements are created inside `renderProject`.
+      window.addEventListener('resize', schedulePositionNav);
+      window.addEventListener('scroll', schedulePositionNav, {passive:true});
+
+      // ensure we position after initial render
+      schedulePositionNav();
+
+      // button handlers now change images within the current project
+      if (prevBtn) prevBtn.addEventListener('click', function(){
+        const use = items[gallery[currentProjectIndex]];
+        const images = Array.isArray(use.images) && use.images.length ? use.images : [use.image || fallback.image];
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        renderProject(currentProjectIndex, currentImageIndex);
+      });
+      if (nextBtn) nextBtn.addEventListener('click', function(){
+        const use = items[gallery[currentProjectIndex]];
+        const images = Array.isArray(use.images) && use.images.length ? use.images : [use.image || fallback.image];
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        renderProject(currentProjectIndex, currentImageIndex);
+      });
+
+      // keyboard support for image navigation only
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'ArrowLeft') { if (prevBtn) prevBtn.click(); }
+        if (e.key === 'ArrowRight') { if (nextBtn) nextBtn.click(); }
+      });
+    });
+  </script>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
