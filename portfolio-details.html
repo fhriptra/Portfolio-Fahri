@@ -135,7 +135,7 @@
         <a href=""><i class="bi bi-instagram"></i></a>
         <a href=""><i class="bi bi-linkedin"></i></a>
       </div>
-      
+
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
@@ -169,7 +169,10 @@
           images: [
             'assets/img/Screenshot 2025-11-20 095954.png',
             'assets/img/Screenshot 2025-11-20 102533.png',
-            'assets/img/Screenshot 2025-11-20 102622.png'
+            'assets/img/Screenshot 2025-11-20 102622.png',
+            `
+            <iframe frameborder="0" src="https://itch.io/embed-upload/15651189?color=333333" allowfullscreen="" width="960" height="560"><a href="https://williamponys.itch.io/unfinished-ps1-pyschological-horror-game">Play (UNFINISHED) Ps1 Pyschological Horror game on itch.io</a></iframe>
+            `
           ],
           description: 'A horror game made with Unity, I was made this back when I was on early 11th grade but still unfinished because of lack of time to do it and also life, The game was supposed to be a PS1 First person Pyschological Horror Game with cryptic storytelling and emotional impact.'
         },
@@ -194,7 +197,8 @@
           date: '05 Mar, 2024',
           url: 'portfolio-details.html?id=masonry-portfolio-3',
           images: [
-            'assets/img/portfolio/3ddesign.png'
+            'assets/img/portfolio/3ddesign.png',
+            `<div class="sketchfab-embed-wrapper"> <iframe title="3D Hard Surface" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/fe9c11163e58411882d363e1ee324f4f/embed?ui_theme=dark"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/3d-hard-surface-fe9c11163e58411882d363e1ee324f4f?utm_medium=embed&utm_campaign=share-popup&utm_content=fe9c11163e58411882d363e1ee324f4f" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> 3D Hard Surface </a> by <a href="https://sketchfab.com/fahriisrahadiputra?utm_medium=embed&utm_campaign=share-popup&utm_content=fe9c11163e58411882d363e1ee324f4f" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> fahriisrahadiputra </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=fe9c11163e58411882d363e1ee324f4f" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>`
           ],
           description: 'A 5 object of 3D from my Teacher'
         },
@@ -220,7 +224,10 @@
           url: '#',
           images: [
             'assets/img/yes.png',
-            'assets/img/yes2.png'
+            'assets/img/yes2.png',
+            `
+            <iframe frameborder="0" src="https://itch.io/embed-upload/15023337?color=000000" allowfullscreen="" width="960" height="560"><a href="https://williamponys.itch.io/winnie-the-pooh-adventures">Play Winnie The Pooh Adventure's on itch.io</a></iframe>
+            `
           ],
           description: 'A short visual adventure titled "Winnie The Pooh Adventure\'s". Replace the placeholder images with your final assets named `yes.png` and `yes2.png` in `assets/img/`.'
         },
@@ -310,11 +317,24 @@
         imageIndex = Math.max(0, Math.min(imageIndex, images.length - 1));
 
         // Render media: image or video depending on file extension
-        try {
+          try {
           const mediaUrl = images[imageIndex];
-          const existing = detailContainer.querySelector('img,video');
+          const existing = detailContainer.querySelector('img,video,div#detail-embed');
           let newEl;
-          if (/\.(mp4|webm|ogg)(\?|#|$)/i.test(mediaUrl)) {
+
+          // Support iframe embeds (e.g. itch.io, sketchfab) when the media entry contains HTML
+          if (/^\s*<(iframe|div)/i.test(mediaUrl)) {
+            newEl = document.createElement('div');
+            newEl.id = 'detail-embed';
+            newEl.className = 'img-fluid';
+            newEl.innerHTML = mediaUrl;
+            // make embedded iframes responsive
+            const embeddedIframes = newEl.querySelectorAll('iframe');
+            embeddedIframes.forEach(function(iframe) {
+              iframe.setAttribute('style', 'width:100%;height:560px;border:0;');
+              iframe.setAttribute('allowfullscreen', '');
+            });
+          } else if (/\.(mp4|webm|ogg)(\?|#|$)/i.test(mediaUrl)) {
             newEl = document.createElement('video');
             newEl.id = 'detail-video';
             newEl.className = 'img-fluid';
